@@ -230,7 +230,7 @@ public:
     node *tail;
 };
 
-// Convert a BST into a linked list
+// Convert a BST into a sorted linked list
 LinkedList flattened(node *root)
 {
     LinkedList l;
