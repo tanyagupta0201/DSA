@@ -1,4 +1,13 @@
-// Replace each element of the array with it's corresponding rank
+/*
+    Replace each element of the array with it's corresponding rank
+
+    Example:  arr[] = {100, 5, 70, 3}
+              Output = [1, 3, 2, 4]
+
+              arr[] = {1, 2, 2, 6}
+              Output = [4, 2, 2, 1]
+
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
