@@ -19,11 +19,13 @@ int Partition(int a[], int lb, int ub)
 
     while (start < end)
     {
+        // Searching the element which is greater than pivot from the starting of the array
         while (a[start] <= pivot)
         {
             start++;
         }
 
+        // Searching the element which is smaller or equal than pivot from the ending of the array
         while (a[end] > pivot)
         {
             end--;
