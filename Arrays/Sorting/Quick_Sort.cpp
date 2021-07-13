@@ -12,9 +12,11 @@ void Display(int a[], int n)
     }
 }
 
+// Partition Algorithm
+// lb - lower bound, ub - upper bound
 int Partition(int a[], int lb, int ub)
 {
-    int pivot = a[lb];
+    int pivot = a[lb];  // Picking the first element of the array as pivot
     int start = lb, end = ub;
 
     while (start < end)
