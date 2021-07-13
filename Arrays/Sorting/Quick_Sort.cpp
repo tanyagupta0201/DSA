@@ -10,7 +10,6 @@ void Display(int a[], int n)
     {
         cout << a[i] << " ";
     }
-    cout << endl;
 }
 
 int Partition(int a[], int lb, int ub)
