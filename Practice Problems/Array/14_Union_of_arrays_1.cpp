@@ -23,7 +23,8 @@ void union_of_arrays(int a[], int b[], int n1, int n2)
     {
         s.insert(b[i]);
     }
-
+    
+    cout << "Union of arrays: ";
     for (set<int>::iterator it = s.begin(); it != s.end(); it++)
     {
         cout << *(it) << ", ";
