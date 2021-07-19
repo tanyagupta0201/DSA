@@ -16,7 +16,7 @@ void rotate(int a[], int d, int n)
     {
         return;
     }
-    d = d % n;
+    d = d % n;  // When d > n 
 }
 
 void Reverse(int a[], int start, int end)
