@@ -1,3 +1,5 @@
+// The time complexity of Kadane's algorithm is O(n)
+
 #include <bits/stdc++.h>
 using namespace std;
 
