@@ -1,5 +1,7 @@
 /*
-    We are given an array containg n numbers. All the numbers are present twice except for two numbers which are present only once. Find the unique numbers in linear time without using any extra space. 
+    We are given an array containg n numbers.
+    All the numbers are present twice except for two numbers which are present only once.
+    Find the unique numbers in linear time without using any extra space. 
 
     Sample Input
     4
