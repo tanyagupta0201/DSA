@@ -41,6 +41,7 @@ int length(node *head)
     return count;
 }
 
+// head is taken by reference as we have to modify our linked list
 void Insert_At_Head(node *&head, int data)
 {
     if (head == NULL)
@@ -54,6 +55,7 @@ void Insert_At_Head(node *&head, int data)
     head = n;
 }
 
+// head is taken by reference as we have to modify our linked list
 void Insert_At_Tail(node *&head, int data)
 {
     if (head == NULL)
@@ -71,6 +73,7 @@ void Insert_At_Tail(node *&head, int data)
     return;
 }
 
+// head is taken by reference as we have to modify our linked list
 void Insert_At_Middle(node *&head, int data, int pos)
 {
     if (head == NULL || pos == 0)
@@ -99,6 +102,7 @@ void Insert_At_Middle(node *&head, int data, int pos)
     }
 }
 
+// head is taken by reference as we have to modify our linked list
 void Delete_Head(node *&head)
 {
     if (head == NULL)
