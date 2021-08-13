@@ -48,11 +48,11 @@ bool search(node *head, int key)
     node *temp = head;
     while (temp != NULL)
     {
-        if (head->data == key)
+        if (temp->data == key)
         {
             return true;
         }
-        head = head->next;
+        temp = temp->next;
     }
     return false;
 }
