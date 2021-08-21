@@ -11,6 +11,7 @@ int PlaceTheTiles(int n)
         return 1;
     }
 
+    // Vertical Way + Horizontal Way
     return PlaceTheTiles(n - 1) + PlaceTheTiles(n - 4);
 }
 
