@@ -17,18 +17,46 @@ This repository contains the implmentation of some of the most basic and importa
 * Programs written in C++ will be appreciated. However, programs written in C will also be accepted. 
 ***
 
-Steps For Contribution
+# Steps For Contribution
 
-    1. Fork this repo
-    2. Star this repo
-    3. Add a file
-    4. Commit the code
-    5. Make pull request
-***
+0. Star <a href="https://github.com/tanyagupta0201/DSA" title="this">this</a> repository.
 
-<h2 align="center">
-    <p>
-        Thank You
-    </p>
-</h2>
+1. Fork <a href="https://github.com/tanyagupta0201/DSA" title="this">this</a> repository.
+
+2. Clone the forked repository.
+```css
+git clone https://github.com/<your-github-username>/DSA
+```
+  
+3. Navigate to the project directory.
+```py
+cd DSA
+```
+
+4. Create a new branch.
+```css
+git checkout -b <your_branch_name>
+```
+
+5. Make changes.
+
+6. Stage your changes and commit
+```css
+git add -A
+
+git commit -m "<your_commit_message>"
+```
+
+7. Push your local commits to the remote repo.
+```css
+git push -u origin <your_branch_name>
+```
+
+8. Create a Pull Request.
+
+9. Congratulations! 🎉 you've made your contribution.
+
+
+---
+
 
