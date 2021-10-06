@@ -1,4 +1,4 @@
-<h2 align="center">DSA - Data Structures and Algorithms</h2>
+<h1 align="center">DSA - Data Structures and Algorithms</h1>
 
 <p align="center">
 This repository contains the implmentation of some of the most basic and important data structures and algorithms implemented in C++. 
