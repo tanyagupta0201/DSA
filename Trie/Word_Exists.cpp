@@ -1,3 +1,11 @@
+/*
+n=5
+words={hell, help, word, apple, app}
+m=4
+words_to_check_for={he, app, hel, help}
+output={False, True, False, True}
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -60,8 +68,8 @@ int main(){
 	for(int i=0; i<m; i++){
 		cin >> word ;
 		if(check(word))
-			cout<< "This word exist in the list" <<endl;
+			cout<< "True" <<endl;
 		else
-			cout<< "This word does not exist in the list"<<endl;
+			cout<< "False"<<endl;
 	}
 }
