@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/integer-to-roman/
 #include <bits/stdc++.h>
+using namespce std;
 class Solution
 {
 public:
