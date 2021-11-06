@@ -1,3 +1,5 @@
+// 0-1 Knapsack Recursive Approach
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -15,27 +17,48 @@ int knapsack(int weight[], int price[], int n, int capacity)
     // Item will be included
     if (weight[n - 1] <= capacity)
     {
+        // Including the current item
         include = price[n - 1] + knapsack(weight, price, n - 1, capacity - weight[n - 1]);
+
+        // Excluding the current item
+        exclude = knapsack(weight, price, n - 1, capacity);
+
+        // Taking the max of include and exclude for max profit
+        ans = max(include, exclude);
     }
     else
     {
         // Item will be excluded
         exclude = knapsack(weight, price, n - 1, capacity);
+        ans = exclude;
     }
-
-    // We need to calculate maximum profit
-    ans = max(include, exclude);
 
     return ans;
 }
 
 int main()
 {
-    int capacity = 7;
-    int weight[] = {1, 2, 3, 5};
-    int price[] = {40, 20, 30, 100};
+    // Input the capacity of the knapsack
+    int capacity;
+    cin >> capacity;
 
-    int n = sizeof(weight) / sizeof(int);
+    // Input the size of weight and price array
+    int n;
+    cin >> n;
+
+    int weight[n], price[n];
+
+    // Input the weight of each item
+    for (int i = 0; i < n; i++)
+    {
+        cin >> weight[i];
+    }
+
+    // Input the price of each item
+    for (int i = 0; i < n; i++)
+    {
+        cin >> price[i];
+    }
 
     cout << "Maximum Profit: " << knapsack(weight, price, n, capacity);
     return 0;
