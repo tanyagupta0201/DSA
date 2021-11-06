@@ -1,3 +1,5 @@
+// 0-1 Knapsack Memoization
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -26,16 +28,24 @@ int knapsack(int weight[], int price[], int n, int capacity)
     // Item will be included
     if (weight[n - 1] <= capacity)
     {
+        // Including the current item
         include = price[n - 1] + knapsack(weight, price, n - 1, capacity - weight[n - 1]);
+
+        // Excluding the current item
+        exclude = knapsack(weight, price, n - 1, capacity);
+
+        // Taking the max of include and exclude for max profit
+        t[n][capacity] = max(include, exclude);
     }
     else
     {
         // Item will be excluded
         exclude = knapsack(weight, price, n - 1, capacity);
+        t[n][capacity] = exclude;
     }
 
     // We need to calculate maximum profit
-    return t[n][capacity] = max(include, exclude);
+    return t[n][capacity];
 }
 
 int main()
