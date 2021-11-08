@@ -52,5 +52,7 @@ int main()
         cin >> arr[i];
     }
 
+    cout << subsetSum(arr, n, sum);
+    
     return 0;
 }
