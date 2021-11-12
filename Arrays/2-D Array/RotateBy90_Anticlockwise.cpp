@@ -67,7 +67,7 @@ int main()
 {
     int n, a[20][20];
 
-    cout << "Enter size of the array: ";
+    cout << "Enter number of rows and columns of the array(N x N): ";
     cin >> n;
 
     cout << "Enter the array elements: ";
