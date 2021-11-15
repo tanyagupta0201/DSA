@@ -18,11 +18,11 @@ int main()
     for (int i = 0; i < n; i++)
     {
         currSum += a[i];
-        if (currSum < 0)
-        {
-            currSum = 0;
-        }
         maxSum = max(maxSum, currSum);
+        
+        if (currSum < 0)
+           currSum = 0;
+     
     }
 
     cout << "Maximum Sum: " << maxSum;
