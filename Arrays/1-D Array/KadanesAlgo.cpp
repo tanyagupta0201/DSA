@@ -14,15 +14,14 @@ int main()
         cin >> a[i];
     }
 
-    //Kadane's Algorithm for Maximum Subarray Sum
+    // Kadane's Algorithm for Maximum Subarray Sum
     for (int i = 0; i < n; i++)
     {
         currSum += a[i];
         maxSum = max(maxSum, currSum);
-        
+
         if (currSum < 0)
-           currSum = 0;
-     
+            currSum = 0;
     }
 
     cout << "Maximum Sum: " << maxSum;
